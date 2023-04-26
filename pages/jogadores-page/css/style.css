@@ -81,141 +81,72 @@ nav a:hover {
     color: var(--amarelo);
 }
 
-/* =========================== SECTION 1 CONFIG =========================== */
+/* =========================== MAINCONFIG =========================== */
 
-#section-1 {
-    display: flex;
-}
-
-#section-1 > img {
-    /* height: 72vh;
-    display: block;
-    margin: 0 auto; */
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-/* =========================== SECTION 2 CONFIG =========================== */
-
-#section-2 > h2#title-sect2{
+.title-main {
     text-align: center;
-    padding: 1em  0 0 0;
-    font-size: 1.5em;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.item {
-    margin: 20px;
-    text-align: center;
-}
-
-.item img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-.item p {
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--preto);
-    background-color: #f1c40f;
-    padding: 5px 7px;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-}
-
-.item p:hover {
-    transform: scale(1.1);
-    background-color: var(--rosa);
-    color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-
-}
-
-a.item {
-    text-decoration: none;
-    color: #000;
-}
-
-.item h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-/* =========================== SECTION 3 CONFIG =========================== */
-  
-#section-3 > h2#title-sect3{
-    text-align: center;
-    padding: 1em  0 0 0;
-    font-size: 1.5em;
-}
-
-.container-news {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-
-}
-
-.news-1, .news-2, .news-3 {
     padding: 1em;
-    text-align: center;
-    margin: 1em auto;
-    background-color: #f4f4f4;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    transition: all 0.5s ease-in-out;
+    font-size: 1.6em;
+}
+.container-players {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* define 6 colunas de tamanho igual */
+    grid-gap: 10px; /* espaço entre as imagens e os títulos */
+    justify-content: center; /* centraliza as colunas horizontalmente */
+    align-items: center; /* centraliza as linhas verticalmente */
+    max-width: 1000px; /* define a largura máxima do container */
+    margin: 0 auto; /* centraliza o container na página */
+    padding: 1em;
 }
 
-.news-1:hover, .news-2:hover, .news-3:hover {
-    transform: scale(1.1);
-    
+.player-grid, .manager {
+  text-align: center; /* centraliza o título */
+  border: 1px solid #000;
 }
 
-.news-1 > h3,
-.news-2 > h3,
-.news-3 > h3 {
-    font-size: 1.5em;
-}
-
-.news-1 > p,
-.news-2 > p,
-.news-3 > p {
-    width: 83%;
-    margin: 0 auto;
-    font-size: 1em;
-}
-
-.news-1 > a,
-.news-2 > a,
-.news-3 > a {
-    text-decoration: none;
-    color: #000;
-}
-
-.news-1 > a > span,
-.news-2 > a > span,
-.news-3 > a > span {
-    text-decoration: underline;
+.player-grid > p, .manager > p{
     color: var(--roxo);
 }
 
+.player-grid > img, .manager > img {
+  width: 100%; /* define que as imagens ocupem todo o espaço disponível */
+  height: auto; /* mantém a proporção da imagem */
+}
+
+.title-name {
+  margin-top: 10px; /* espaço entre a imagem e o título */
+  font-size: 16px; /* tamanho do texto */
+  font-weight: bold; /* negrito */
+  text-transform: uppercase; /* transforma o texto em maiúsculas */
+}
+
 /* =========================== FOOTER CONFIG =========================== */
+
+.title-history {
+    text-align: center;
+    padding: 1em;
+    font-size: 1.6em;
+}
+
+.history-item {
+    display: block;
+    margin: 2em auto;
+    width: 41%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1em;
+    
+}
+
+.history-item > h1 {
+    text-align: center;
+}
+
+.history-item > p {
+    line-height: 1.4em;
+}
+
+/* =========================== FOOTER CONFIG =========================== */
+
 footer {
     padding: 20px;
     background-color: var(--preto);

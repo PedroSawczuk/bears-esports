@@ -1,0 +1,188 @@
+/* CONFIGS GERAIS  */
+
+:root {
+    --rosa:#B300FF;
+    --roxo:#5E0982;
+    --amarelo:#FFA100;
+    --preto:#020202;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;			
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* =========================== HEADER CONFIG =========================== */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--preto);
+    color: #fff;
+    padding: 20px;
+}
+
+.logo-header {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-right: auto;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--preto);
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.6s ease-in-out;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: var(--roxo);
+    color: var(--amarelo);
+}
+
+/* =========================== FOOTER CONFIG =========================== */
+footer {
+    padding: 20px;
+    background-color: var(--preto);
+}
+
+footer > h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.container-patrocinadores {
+    display: grid;
+    grid-template-columns: repeat(4, 40px) 55px;
+    grid-gap: 50px;
+    justify-content: center;
+
+}
+
+.container-patrocinadores > .patrocinador > img {
+    background-color: #fff;
+    padding: 1em;
+    width: 40px;
+}
+
+.container-patrocinadores > #redragon-logo > img {
+    width: 55px;
+}
+
+.container-socialmedia {
+    padding: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-gap: 40px;
+    justify-content: center;
+}
+
+.container-socialmedia > .social-media > i {
+    font-size: 24px;
+    color: var(--amarelo);
+    background-color: var(--roxo);
+    padding: .5em;
+}
+
+
+
+/* responsivo */
+
+@media (max-width:768px){
+    .title {
+        font-size: 1.031em;
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    
+    .nav-item{
+        margin: 6px 0;
+    }
+    
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .container-patrocinadores > .patrocinador > img {
+        background-color: #fff;
+        padding: .7em;
+        width: 25px;
+    }
+    
+    .container-patrocinadores > #redragon-logo > img {
+        width: 35px;
+    }
+
+    .container-socialmedia > .social-media > i {
+        font-size: 20px;
+    }
+    
+    .hamburguer{
+        display: block;
+    }
+    
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburguer.active .bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
