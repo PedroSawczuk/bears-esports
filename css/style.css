@@ -260,3 +260,10 @@ footer > h3 {
     padding: .5em;
 }
 
+.social-media {
+    transition: 1s;    
+}
+
+.social-media:hover {
+    transform: scale(1.1);
+}
