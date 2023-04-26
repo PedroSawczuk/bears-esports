@@ -81,60 +81,27 @@ nav a:hover {
     color: var(--amarelo);
 }
 
-/* =========================== MAIN CONFIG =========================== */
-
 .title-main {
     text-align: center;
     padding: 1em;
     font-size: 1.6em;
 }
 
-#sect-produts > .container-produts, .em-breve-products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 10px; 
-    justify-content: center; 
-    align-items: center; 
-    max-width: 1000px; 
-    margin: 0 auto; 
-}
-
-.container-produts > .produts > img {
-    width: 70%;
-    height: auto;
-}
-
-.produts, .em-breve-products {
+.image-center {
     text-align: center;
 }
 
-h2.title-produts {
-    text-align: center;
-}
-
-p.price-produts {
+.parts-history {
+    margin: 0 auto;
+    font-size: 1.2em;
+    width: 80%;
     text-align: center;
     padding: 1em;
-    margin: 1em;
-    background-color: var(--roxo);
-    color: #fff;
-    font-weight: 700;
+    line-height: 1.5em;
 }
 
-
-.em-breve-products > .produts-breve > img {
-    filter: blur(10px);
-    width: 70%;
-    height: auto;
-
-}
-
-.sub-title {
-    text-align: center;
-}
 
 /* =========================== FOOTER CONFIG =========================== */
-
 footer {
     padding: 20px;
     background-color: var(--preto);
@@ -178,4 +145,3 @@ footer > h3 {
     background-color: var(--roxo);
     padding: .5em;
 }
-

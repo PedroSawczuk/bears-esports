@@ -1,0 +1,56 @@
+@media (max-width:768px){
+    .title {
+        font-size: 1.031em;
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    
+    .nav-item{
+        margin: 6px 0;
+    }
+    
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .container-patrocinadores > .patrocinador > img {
+        background-color: #fff;
+        padding: .7em;
+        width: 25px;
+    }
+    
+    .container-patrocinadores > #redragon-logo > img {
+        width: 35px;
+    }
+
+    .container-socialmedia > .social-media > i {
+        font-size: 20px;
+    }
+    
+    .hamburguer{
+        display: block;
+    }
+    
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburguer.active .bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
