@@ -1,0 +1,244 @@
+:root {
+    --rosa:#B300FF;
+    --roxo:#5E0982;
+    --amarelo:#FFA100;
+    --preto:#020202;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;			
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a.item {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--preto);
+    color: #fff;
+    padding: 20px;
+}
+
+.logo-header {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-right: auto;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--preto);
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.6s ease-in-out;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: var(--roxo);
+    color: var(--amarelo);
+}
+
+#section-1 {
+    display: flex;
+}
+
+#section-1 > img {
+    /* height: 72vh;
+    display: block;
+    margin: 0 auto; */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#section-2 > h2#title-sect2{
+    text-align: center;
+    padding: 1em  0 0 0;
+    font-size: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.item {
+    margin: 20px;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.item p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--preto);
+    background-color: #f1c40f;
+    padding: 5px 7px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.item p:hover {
+    transform: scale(1.1);
+    background-color: var(--rosa);
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+  
+#section-3 > h2#title-sect3{
+    text-align: center;
+    padding: 1em  0 0 0;
+    font-size: 1.5em;
+}
+
+.container-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.news-1, .news-2, .news-3 {
+    padding: 1em;
+    text-align: center;
+    margin: 1em auto;
+    background-color: #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: all 0.5s ease-in-out;
+}
+
+.news-1:hover, .news-2:hover, .news-3:hover {
+    transform: scale(1.1);
+    
+}
+
+.news-1 > h3,
+.news-2 > h3,
+.news-3 > h3 {
+    font-size: 1.5em;
+}
+
+.news-1 > p,
+.news-2 > p,
+.news-3 > p {
+    width: 83%;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+.news-1 > a,
+.news-2 > a,
+.news-3 > a {
+    text-decoration: none;
+    color: #000;
+    
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--preto);
+}
+
+footer > h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.container-patrocinadores {
+    display: grid;
+    grid-template-columns: repeat(4, 40px) 55px;
+    grid-gap: 50px;
+    justify-content: center;
+
+}
+
+.container-patrocinadores > .patrocinador > img {
+    background-color: #fff;
+    padding: 1em;
+    width: 40px;
+}
+
+.container-patrocinadores > #redragon-logo > img {
+    width: 55px;
+}
+
+.container-socialmedia {
+    padding: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-gap: 40px;
+    justify-content: center;
+}
+
+.container-socialmedia > .social-media > i {
+    font-size: 24px;
+    color: var(--amarelo);
+    background-color: var(--roxo);
+    padding: .5em;
+}
+

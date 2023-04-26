@@ -1,0 +1,111 @@
+
+@media (max-width:768px){
+    .title {
+        font-size: 1.031em;
+    }
+
+    .container-patrocinadores > .patrocinador > img {
+        background-color: #fff;
+        padding: .7em;
+        width: 25px;
+    }
+    
+    .container-patrocinadores > #redragon-logo > img {
+        width: 35px;
+    }
+
+    .container-socialmedia > .social-media > i {
+        font-size: 20px;
+    }
+    
+    .hamburguer{
+        display: block;
+    }
+    
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburguer.active .bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    
+    .nav-item{
+        margin: 6px 0;
+    }
+    
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .container-news {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .news-1, .news-2, .news-3 {
+        width: 80%;
+    
+        text-align: center;
+        margin:1em auto;
+        background-color: #f4f4f4;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    
+    .news-1 > h3,
+    .news-2 > h3,
+    .news-3 > h3 {
+        font-size: 1.5em;
+    }
+    
+    .news-1 > p,
+    .news-3 > p {
+        width: 83%;
+        margin: 0 auto;
+        font-size: 1em;
+    }
+
+    .news-2 > p {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1em;
+    }
+
+    .item img {
+        max-width: 75%;
+        max-height: 75%;
+        object-fit: contain;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    .item p {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--preto);
+        background-color: #f1c40f;
+        padding: 5px 7px;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+}
