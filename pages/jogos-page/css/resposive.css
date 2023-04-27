@@ -75,11 +75,15 @@
     }
     
     td > img {
-        width: 24%;
+        width: 28%;
     }
     
     .text-row {
-        font-size: .5em;
+        font-size: .4em;
+    }
+
+    .result-row {
+        font-weight: 600;
     }
 
     .green-row {
