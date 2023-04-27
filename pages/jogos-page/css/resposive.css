@@ -1,3 +1,4 @@
+
 @media (max-width:768px){
     .title {
         font-size: 1.031em;
@@ -52,5 +53,52 @@
     
     .hamburguer.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 85%;
+        margin: 1em auto;
+    }
+    
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: .5em ;
+        text-align: center;
+    }
+    
+    td > img {
+        width: 24%;
+    }
+    
+    .text-row {
+        font-size: .96em;
+    }
+
+    .green-row {
+        background-color: green;
+        color: white;
+    }
+    
+    .red-row {
+        background-color: rgb(117, 19, 19);
+        color: white;
+    }
+    
+    .team-row {
+        background-color: rgb(255, 255, 255);
+        color: white;
+    }
+    
+    th {
+        background-color: var(--roxo);
+        color: white;
     }
 }
