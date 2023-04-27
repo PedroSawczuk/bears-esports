@@ -113,6 +113,16 @@ footer > h3 {
     font-size: 1.4em;
 }
 
+footer > h5 {
+    text-align: center;
+    color: #fff;
+}
+
+footer > h5 > a {
+    text-align: center;
+    color: var(--rosa);
+}
+
 .container-patrocinadores {
     display: grid;
     grid-template-columns: repeat(4, 40px) 55px;
